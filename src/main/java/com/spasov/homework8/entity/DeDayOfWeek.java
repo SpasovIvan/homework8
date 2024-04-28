@@ -1,10 +1,13 @@
 package com.spasov.homework8.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.TextStyle;
 import java.util.Locale;
 
+@Component("deDayOfWeek")
 public class DeDayOfWeek implements CurrentDayOfWeek{
     @Override
     public String getCurrentDayOfWeek() {
